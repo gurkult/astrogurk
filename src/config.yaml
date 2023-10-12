@@ -11,7 +11,7 @@ metadata:
   title:
     default: Gurkult
     template: '%s — Gurkult'
-  description: "\U00129362 The First and Only Open Source Community! Join us now."
+  description: "The First and Only Open Source Community! Join us now."
   robots:
     index: true
     follow: true
