@@ -17,94 +17,82 @@ const metadata = {
 
   <HeroText
     tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    title="Different plans for every need"
+    subtitle="Everyone should be able to become a Gurkan, so we offer a range of plans to accomodate the needs of everyone."
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
     title="Our prices"
-    subtitle="Only pay for what you need"
+    subtitle="Choose the plan that works for you. Other than the roles below, there are more roles you can get later on, by contributing meaningfully to the community."
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
+        title: 'Non-gurkan',
+        subtitle: 'Optimal if you have no interest in becoming a Gurkan',
+        price: 0,
         period: 'per month',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
-          },
-          {
-            description: 'Aenean ac nunc dolor tristique',
-          },
-          {
-            description: 'Cras scelerisque accumsan lib',
-          },
-          {
-            description: 'In hac habitasse',
+            description: 'No perks',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Leave now',
+          href: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
+        title: 'gurkan',
+        subtitle: 'Enjoy the perks of being a Gurkan, for free, forever.',
+        price: 0,
+        period: 'for life',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Be a part of a large community of likeminded people',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'The fancy Gurkan green role on Discord',
           },
           {
-            description: 'Volutpat hac curabitur',
+            description: 'Access to the Minecraft server',
           },
           {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
+            description: 'Bragging rights for being awesome',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Join now',
+          href: import.meta.env.PUBLIC_DISCORD_INVITE,
         },
         hasRibbon: true,
         ribbonTitle: 'popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'contributor gurkan',
+        subtitle: 'Contribute meaningfully to Gurkult and get rewarded for it.',
+        price: 0,
+        period: 'for life',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'Everything in "Gurkan"',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'The vibrant Contributor role on Discord',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Access to the private testing server',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'Being a central part of the community',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Apply now',
+          href: import.meta.env.PUBLIC_DISCORD_INVITE,
         },
       },
     ]}
@@ -113,39 +101,39 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="Perks of being a Gurkan"
+    subtitle="Discover the advantages of being a Gurkan, and how you can get the most out of your membership."
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: 'Be part of a community',
+        description: 'Join a large community of likeminded people, and make new friends from all over the world.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
-        icon: 'tabler:flip-vertical',
+        title: 'Gurkcraft',
+        description: "Access to the Gurkult Minecraft server, where you can build and explore to your heart's content.",
+        icon: 'tabler:pick',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
-        icon: 'tabler:shield-lock',
+        title: 'Endless programming projects',
+        description: 'As an open source community, there are always new projects to contribute to and learn from.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Gurkult merchandise',
+        description: 'Get access to exclusive Gurkult merchandise, such as stickers, t-shirts, and more.',
+        icon: 'tabler:shopping-cart',
+      },
+      {
+        title: 'No-cult cult',
+        description: 'As a cult, we praise cucumbers. However, we will never exploit you for monitary gain.',
+        icon: 'tabler:heart',
       },
       {
         title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
-      },
-      {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
-        icon: 'tabler:chevrons-up',
-      },
-      {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
-        icon: 'tabler:headset',
+        description: `Immediate access all the perks of being a Gurkan right after joining!.`,
+        icon: 'tabler:bolt',
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
@@ -154,7 +142,7 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
+    title="A guided journey to becoming a Gurkan"
     tagline="simplified process"
     isReversed={true}
     items={[
@@ -163,32 +151,20 @@ const metadata = {
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Join the Gurkult server',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'Be respectful to fellow Gurkans',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Enjoy the perks of being a Gurkan!',
         icon: 'tabler:number-4',
-      },
-      {
-        title: 'Enter payment details',
-        icon: 'tabler:number-5',
-      },
-      {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: '/images/cucumber-path.png',
       alt: 'Steps image',
     }}
   />
@@ -197,33 +173,35 @@ const metadata = {
 
   <FAQs
     title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have any other questions, feel free to join the server and ask us there!"
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: 'Are there any obligations to being a Gurkan?',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          'We expect everyone to be nice and respectful to each other, and to praise cucumbers in their own ways. Other than that, there are no obligations!',
       },
       {
-        title: 'Is there a trial period for the different plans?',
+        title: 'Can I test-join the cult before deciding if I want to become a Gurkan?',
         description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
-      },
-      {
-        title: 'Can I switch between plans?',
-        description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
-      },
-      {
-        title: 'What payment methods do you accept?',
-        description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+          "We're an inclusive community, and welcome you to join us and see if you like it! Furthermore, you're always free to leave the server if you change your mind, but at heart you'll always be a Gurkan to us.",
       },
       {
         title: 'Are there any hidden fees beyond the displayed cost?',
+        description: 'Nope! This cult is completely free of charge.',
+      },
+      {
+        title: 'What payment methods do you accept?',
+        description: 'We accept payments of 0 GRK (Gurkoins) from any bank registered in Gurkland.',
+      },
+      {
+        title: "What's the best plan for someone who prefers melons over cucumbers?",
+        description: 'This is not the place for melons, so please select the "Non-Gurkan"-plan and leave.',
+      },
+      {
+        title: 'Are there other plans/roles I can get in the future?',
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+          'Certainly! We have a range of roles you can get by contributing meaningfully to the community. For example: Gurkan Lord, Moderator, and more.',
       },
     ]}
   />
@@ -231,13 +209,13 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="Ready to become a Gurkan?"
+    subtitle="Join our global community of Cucumber lovers, and start reaping the benefits!"
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: 'Join now',
+        href: import.meta.env.PUBLIC_DISCORD_INVITE,
       },
     ]}
   />
