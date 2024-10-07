@@ -1,5 +1,5 @@
 ---
-publishDate: 2023-10-12T00:00:00Z
+publishDate: 2024-10-10T00:00:00Z
 title: 'Hello world!'
 excerpt: This is the start of the blog Gurkult blog! Seems exciting? Check in at some point in the future, and a proper article might emere!
 image: https://images.unsplash.com/photo-1602343244137-a142ba5c7b22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4000&q=80
