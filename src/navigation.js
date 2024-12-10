@@ -1,9 +1,10 @@
 import { getPermalink, getBlogPermalink, getHomePermalink, getAsset } from './utils/permalinks';
+import { DISCORD_INVITE, REDBUBBLE_LINK } from '~/constants';
 
 export const headerData = {
-  links: [ 
+  links: [
     {
-      text: "Home",
+      text: 'Home',
       href: getHomePermalink(),
     },
     {
@@ -20,14 +21,12 @@ export const headerData = {
     },
   ],
   actions: [
-    { text: "Shop Merch", href: import.meta.env.PUBLIC_REDBUBBLE_LINK, target: '_blank' },
-    { text: 'Join Now', href: import.meta.env.PUBLIC_DISCORD_INVITE, target: '_blank', primary: true },
+    { text: 'Shop Merch', href: REDBUBBLE_LINK, target: '_blank' },
+    { text: 'Join Now', href: DISCORD_INVITE, target: '_blank', primary: true },
   ],
 };
 
 export const footerData = {
-  socialLinks: [
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/gurkult' },
-  ],
-  footNote: "",
+  socialLinks: [{ ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/gurkult' }],
+  footNote: '',
 };

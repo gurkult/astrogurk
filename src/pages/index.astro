@@ -13,6 +13,8 @@ const metadata = {
   title: 'Gurkult - the Gurkan Open Source Community',
   ignoreTitleTemplate: true,
 };
+
+import { DISCORD_INVITE } from '~/constants';
 ---
 
 <Layout metadata={metadata}>
@@ -23,7 +25,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Join us',
-        href: import.meta.env.PUBLIC_DISCORD_INVITE,
+        href: DISCORD_INVITE,
         target: '_blank',
         icon: 'tabler:arrow-right',
       },
@@ -196,7 +198,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Join now',
-        href: import.meta.env.PUBLIC_DISCORD_INVITE,
+        href: DISCORD_INVITE,
       },
     ]}
   />

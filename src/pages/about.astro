@@ -5,6 +5,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
+import { DISCORD_INVITE } from '~/constants';
+
 const metadata = {
   title: 'About us',
 };
@@ -116,7 +118,7 @@ const metadata = {
     subtitle="Seems interesting? We're always looking for new members, and we'd love to have you! Click the link below to get started!"
     callToAction={{
       text: 'Become a Gurkan',
-      href: import.meta.env.PUBLIC_DISCORD_INVITE,
+      href: DISCORD_INVITE,
     }}
   />
 </Layout>

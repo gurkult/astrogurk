@@ -10,6 +10,8 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 const metadata = {
   title: 'Pricing',
 };
+
+import { DISCORD_INVITE } from '~/constants';
 ---
 
 <Layout metadata={metadata}>
@@ -65,7 +67,7 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'Join now',
-          href: import.meta.env.PUBLIC_DISCORD_INVITE,
+          href: DISCORD_INVITE,
         },
         hasRibbon: true,
         ribbonTitle: 'popular',
@@ -92,7 +94,7 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'Apply now',
-          href: import.meta.env.PUBLIC_DISCORD_INVITE,
+          href: DISCORD_INVITE,
         },
       },
     ]}
@@ -215,7 +217,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Join now',
-        href: import.meta.env.PUBLIC_DISCORD_INVITE,
+        href: DISCORD_INVITE,
       },
     ]}
   />
